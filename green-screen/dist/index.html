@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - green screen</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<head>
+  <title>Green Screen Image Filter Web Application By KANISHK SHIRODKAR</title>
+  <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <script src = "javascriptEngine.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Upload images to replace green background images with specific background image</2> <br /><br />
+<table>
+  <tr><th>Green Screen Image</th>
+      <th>Background Image</th>
+  </tr>
+  <tr>
+    <td>
+    <canvas id = "canvas1"></canvas>
+  <br />
+   <p>Modify color of canvas</p>
+   <input type = "color" id = "colorPick" value = "#FFFFFF" onkeypress="return runScript(event)" > <br />
+   <input type = "file" id = "fInput1" multiple = "false" accept = "image/*" onchange = "upload1()" >
+   <input type = "button" value = "Gray Scale" id = "gray1" onclick = "grayScale('gray1')">
+    </td>
+    
+    <td>
+      <canvas id = "canvas2"></canvas>
+  <br />
+      <p>Modify color of canvas</p>
+      <input type = "color" id = "colorPick2" value = "#FFFFFF" onkeypress="return runScript2(event)" > <br />
+      <input type = "file" id = "fInput2" multiple = "false" accept = "image/*" onchange = "upload2()" >
+      <input type = "button" value = "Gray Scale" id = "gray2" onclick = "grayScale('gray2')">
+    </td>
+  </tr>
+</table>
+
+  <input type = "button" value = "Combine Both" onclick = "greenScreen()">
+
+  <input type = "button" value = "Clear Canvas" onclick = "clearCanvases()">
+  
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
